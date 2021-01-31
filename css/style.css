@@ -1,0 +1,197 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1400px;
+	background: #FFFFFF;
+}
+
+
+/* Container
+=================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin: 20px, auto;
+}
+
+/*-- Header --*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.header-logo {
+	padding: 0 40px 0 0;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.header-nav-link {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #1E0606;
+}
+
+.header-nav-link:hover {
+	opacity: 0.5;
+}
+
+.header-nav-link:active {
+	opacity: 0.2;
+}
+
+.header-nav-link:first-child {
+	margin-left: 0;
+}
+
+.header-find-contact {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.banner {
+	display: flex;
+	justify-content: flex-start;
+	height: 380px;
+	background: #EEE4DB;
+	margin-top: 130px;
+	padding: 17px 0 0 28px;
+	position: relative;
+}
+
+h2 {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 110%;
+	margin: 0;
+}
+
+/* Main */
+.banner-scroller {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 300;
+	color: rgba(30, 6, 6, 0.05);
+	width: 130px;
+}
+
+.rectangle {
+	height: 3px;
+	width: 31px;
+	background: #D6CAC2;
+	margin: 10px 5px;
+}
+
+.rectangle-active {
+	height: 3px;
+	width: 31px;
+	background: rgba(30, 6, 6, 0.6);
+	margin: 10px 5px;
+}
+
+.banner-title {
+	max-width: 310px;
+}
+
+.banner-logo {
+	height: 461px;
+	width: 636px;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+
+.banner-bottom-line {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	background: #C29974;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-designedin {
+	font-family: "Crimson Text", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.btn {
+	height: 40px;
+	width: 160px;
+	background: #FFFFFF;
+}
+
+button {
+	height: 40px;
+	width: 160px;
+	background: #000000;
+	color: #FFFFFF;
+	border: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+/* Window Modal */
+.modal {
+	width: 1400px;
+	height: 768px;
+	background: #E5EAF8;
+	display: flex;
+	justify-content: center;
+	background: rgba(125, 151, 218, 0.8);
+}
+
+.modal-form {
+	width: 640px;
+	height: 540px;
+	background: #E5EAF8;
+	margin-top: 113px;
+	padding: 40px;
+	
+}
+
+.modal-textarea {
+	width: 600px;
+	height: 150px;
+	resize: none;
+	border-width: 1px;
+  border-style: solid;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
+
+.modal-input {
+	display: block;
+	width: 290px;
+	height: 50px;
+	border-radius: 0;
+	border-width: 1px;
+  border-style: solid;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
