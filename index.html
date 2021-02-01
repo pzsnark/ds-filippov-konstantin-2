@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content = "ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
   <title> DLK Project </title>
 </head>
@@ -30,7 +30,7 @@
 <!--Main-->
 <main>
 	<section class="banner">
-		<div class="banner-scroller">
+		<div class="banner-slider">
 			01
 			<div class="rectangle-active"></div>
 			<div class="rectangle"></div>
@@ -38,41 +38,49 @@
 			<div class="rectangle"></div>
 		</div>
 		<div class="banner-title">
-			<h2>THE OOH NOO COLLECTION</h2>
+			<h1>THE OOH NOO COLLECTION</h1>
 			<p class="banner-designedin">Designed in Slovenia</p>
-			<button type="btn">EXPLORE NOW</button>
+			<button type="button">EXPLORE NOW</button>
 			</div>
 		<div class="banner-logo">
 			<img src="images/oohnoo.png" alt="banner logo">
 		</div>
 	</section>
 	<div class="banner-bottom-line">FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</div>
-	
+    
+    <!--Category-->
 	<section class="category">
 		<h2>CATEGORY PRODUCTS</h2>
-
-		<div class="category-item"><img src="./images/category1.png" alt=""></div>
-		<div class="category-item"><img src="./images/category2.png" alt=""></div>
-		<div class="category-item"><img src="./images/category3.png" alt=""></div>
-		<div class="category-item"><img src="./images/category4.png" alt=""></div>
-
-		<a href="#"><img src="./images/arrowleft.svg" alt="arrow left"></a>
-		<a href="#"><img src="./images/arrowright.svg" alt="arrow right"></a>
-		<p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
-	</section>
+        <div class="category-list">
+            <div><a href="#"><img src="./images/category1.png" alt=""></a></div>
+            <div><a href="#"><img src="./images/category2.png" alt=""></a></div>
+            <div><a href="#"><img src="./images/category3.png" alt=""></a></div>
+            <div><a href="#"><img src="./images/category4.png" alt=""></a></div>
+        </div>
+        <div class="category-arrow">
+            <div class="category-arrow-left"><a href="#"><img src="./images/arrowleft.svg" alt="arrow left"></a></div>
+            <div class="category-arrow-right"><a href="#"><img src="./images/arrowright.svg" alt="arrow right"></a></div>
+            <div>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</div>
+        </div>
+    </section>
+    
 	<section class="delivery">
-		<img src="./images/delivery.jpg" alt="delivery">
-		<h2>DELIVERY</h2>
-		<ul class="delivery-list">
-			<li class="delivery-item-active"><a href="#">Delivery</a></li>
-			<li class="delivery-item"><a href="#">Guarantee</a></li>
-			<li class="delivery-item"><a href="#">Credit</a></li>
-			<li>
-				<p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-				<p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-			</li>
-			<li><a href="#" class="button">LEARN MORE</a></li>
-		</ul>
+        <div>
+            <img src="./images/delivery.jpg" alt="delivery">
+        </div>
+        <div>
+            <h2>DELIVERY</h2>
+            <ul class="delivery-list">
+                <li class="delivery-item-active"><a href="#">Delivery</a></li>
+                <li class="delivery-item"><a href="#">Guarantee</a></li>
+                <li class="delivery-item"><a href="#">Credit</a></li>
+                <li>
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                </li>
+                <li><a href="#"><div class="btn">LEARN MORE</div></a></li>
+            </ul>
+        </div>
 	</section>
 	<section class="partners">
 		<a href="#"><img src="./images/mailrugroup.svg" alt="mailgroup"></a>
@@ -91,7 +99,7 @@
 			<li>
 				<h2>CONTACTS</h2>
 				<p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-				<p><a href="#"><img src="map.jpg" alt="map"></a></p>
+				<p><a class="button" href="#"><img src="map.jpg" alt="map"></a></p>
 			</li>
 		</ul>
 	</section>
@@ -124,33 +132,33 @@
 	</ul>
 </footer>
 	
-<section class="modal">
-	<div class="modal-form">
-		<form name="contact" method="post" action="">
-			<label>Name
-				<input class="modal-input" name="login" type="text">			
-			</label>
-			<label>Phone
-				<input class="modal-input" name="phone" type="tel">			
-			</label>
-			<label>Email
-				<input class="modal-input" name="email" type="email">			
-			</label>
-			<p>
-			<label>Message
-				<textarea class="modal-textarea" name="message"></textarea>			
-			</label>
-			</p>
-			<label>
-				<p>
-					<input type="checkbox" class="custom-checkbox" id="check" name="check" value="yes">
-					<label for="check">By clicking on the button, you consent to the processing of your personal data</label>
-				</p>
-			</label>
-			<button type="submit" active="">SUBMIT</button>
-		</form>
+<div class="modal">	
+	<div class="form">
+		<div class="name">
+			<label for="name">Name</label>
+			<input id="name" type="text">
+		</div>
+		<div class="wrapper">
+			<div class="phone">
+				<label for="phone">Phone</label>
+				<input id="phone" type="tel">
+			</div>
+			<div class="email">
+				<label for="email">Email</label>
+				<input id="email" type="email">
+			</div>
+		</div>
+		<div class="message">
+			<label for="message">Message</label>
+			<textarea id="message"></textarea>
+		</div>
+		<div class="checkbox">
+			<input class="box" type="checkbox" id="box">
+			<label for="box"> By clicking on the button, you consent to the processing of your personal data</label>
+		</div>
+		<button class="button2" type="submit">SUBMIT</button>		
 	</div>
-</section>
+</div>
 
 	</body>
 </html>

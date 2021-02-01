@@ -3,7 +3,7 @@ body {
 	font-size: 14px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1180px;
 	background: #FFFFFF;
 }
 
@@ -73,7 +73,7 @@ label {
 	position: relative;
 }
 
-h2 {
+h1 {
 	font-family: Montserrat, Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -81,8 +81,20 @@ h2 {
 	margin: 0;
 }
 
+h2 {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 110%;
+	margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 /* Main */
-.banner-scroller {
+.banner-slider {
 	font-family: Montserrat, Arial, sans-serif;
 	font-size: 60px;
 	font-weight: 300;
@@ -137,12 +149,166 @@ h2 {
 	font-style: italic;
 }
 
-.btn {
-	height: 40px;
-	width: 160px;
-	background: #FFFFFF;
+/* Category */
+
+.category {
+	margin-top: 90px;
 }
 
+.category-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.category-arrow {
+	width: 680px;
+	height: 44px;
+	display: flex;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.category-arrow-left {
+	margin-right: 6px;
+}
+
+.category-arrow-right {
+	margin-right: 20px;
+}
+
+/* Delivery */
+.delivery {
+	display: flex;
+	justify-content: center;
+}
+
+.delivery-item-active {
+	width: 326px;
+	height: 55px;
+	background: rgba(112, 187, 220, 0.2);
+	font-family: 'Crimson Text';
+	font-weight: 700;
+	font-size: 26px;
+}
+
+.delivery-item {
+	width: 326px;
+	height: 55px;
+	font-family: 'Crimson Text';
+	font-weight: 400;
+	font-size: 26px;
+
+}
+
+.btn {
+	border: 1px solid #333;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+	color: #fff;
+	background: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Window Modal */
+.form {
+    width: 600px;
+    height: 412px;
+    background: #E5EAF8;
+    padding: 65px 40px;
+    margin-top: 113px;
+  }
+  
+  .name {
+    width: 100%;
+    height: 73px;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    width: 100%;
+    height: 173px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    height: 73px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+	height: 50px;
+	border-width: 1px;
+    border-style: solid;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+	height: 150px;
+	resize: none;
+	border-width: 1px;
+    border-style: solid;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .phone {
+      margin-right: 20px;
+  }
+
+  .phone, .email {
+      width: 50%;
+  }
+
+  .box {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .button2 {
+	height: 40px;
+	width: 106px;
+	background: #000000;
+	color: #FFFFFF;
+	border: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+    font-weight: 700;
+	margin-top: 20px;
+  }
+
+  .modal {
+    width: 1400px;
+    height: 768px;
+    background: #E5EAF8;
+    display: flex;
+    justify-content: center;
+    background: rgba(125, 151, 218, 0.8);
+	}
+	
+	
 button {
 	height: 40px;
 	width: 160px;
@@ -152,46 +318,4 @@ button {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
-}
-
-/* Window Modal */
-.modal {
-	width: 1400px;
-	height: 768px;
-	background: #E5EAF8;
-	display: flex;
-	justify-content: center;
-	background: rgba(125, 151, 218, 0.8);
-}
-
-.modal-form {
-	width: 640px;
-	height: 540px;
-	background: #E5EAF8;
-	margin-top: 113px;
-	padding: 40px;
-	
-}
-
-.modal-textarea {
-	width: 600px;
-	height: 150px;
-	resize: none;
-	border-width: 1px;
-  border-style: solid;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
-}
-
-.modal-input {
-	display: block;
-	width: 290px;
-	height: 50px;
-	border-radius: 0;
-	border-width: 1px;
-  border-style: solid;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
-}
+	line-height: 22px;
