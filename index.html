@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
   <title> DLK Project </title>
 </head>
@@ -40,7 +41,7 @@
 		<div class="banner-title">
 			<h1>THE OOH NOO COLLECTION</h1>
 			<p class="banner-designedin">Designed in Slovenia</p>
-			<button type="button">EXPLORE NOW</button>
+			<button class="button">EXPLORE NOW</button>
 			</div>
 		<div class="banner-logo">
 			<img src="images/oohnoo.png" alt="banner logo">
@@ -58,50 +59,52 @@
             <div><a href="#"><img src="./images/category4.png" alt=""></a></div>
         </div>
         <div class="category-arrow">
-            <div class="category-arrow-left"><a href="#"><img src="./images/arrowleft.svg" alt="arrow left"></a></div>
-            <div class="category-arrow-right"><a href="#"><img src="./images/arrowright.svg" alt="arrow right"></a></div>
-            <div>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</div>
+            <a href="#"><img class="category-arrow-left" src="./images/arrowleft.svg" alt="arrow left"></a>
+			<a href="#"><img class="category-arrow-right" src="./images/arrowright.svg" alt="arrow right"></a>
+            Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
         </div>
     </section>
     
+	<!--Delivery-->
 	<section class="delivery">
         <div>
             <img src="./images/delivery.jpg" alt="delivery">
         </div>
-        <div>
-            <h2>DELIVERY</h2>
+        <div class="delivery-menu">
+			<h2>DELIVERY</h2>
             <ul class="delivery-list">
-                <li class="delivery-item-active"><a href="#">Delivery</a></li>
+				<li class="delivery-item"></li>
+                <li class="delivery-item delivery-item-active"><a href="#">Delivery</a></li>
                 <li class="delivery-item"><a href="#">Guarantee</a></li>
                 <li class="delivery-item"><a href="#">Credit</a></li>
-                <li>
                     <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                     <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                </li>
-                <li><a href="#"><div class="btn">LEARN MORE</div></a></li>
+                	<p class="delivery-button"><a class="button" href="#">LEARN MORE</a></p>
             </ul>
         </div>
 	</section>
+	
+	<!--Partners-->
 	<section class="partners">
 		<a href="#"><img src="./images/mailrugroup.svg" alt="mailgroup"></a>
 		<a href="#"><img src="./images/apple.svg" alt="apple"></a>
 		<a href="#"><img src="./images/eltex.svg" alt="eltex"></a>
 		<a href="#"><img src="./images/owox.svg" alt="owox"></a>
 	</section>
+
+	<!--Contacts-->
 	<section class="contacts">
-		<ul class="contacts-list">
-			<li>
+			<div class="contacts-item">
 				<h2>DESIGN LIFE KIDS</h2>
-				<p>About Us</p>
+				<p class="contacts-about">About Us</p>
 				<p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-				<div class="button"><a href="#">BUY NOW</a></div>
-			</li>
-			<li>
+				<p class="contact-button"><a class="button" href="#">BUY NOW</a></p>
+			</div>
+			<div class="contacts-item">
 				<h2>CONTACTS</h2>
 				<p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-				<p><a class="button" href="#"><img src="map.jpg" alt="map"></a></p>
-			</li>
-		</ul>
+			</div>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4459.916896886058!2d-122.42131472635465!3d37.775097630703044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1612683105545!5m2!1sru!2sru" width="483" height="196" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 	</section>
 </main>
 
@@ -156,7 +159,7 @@
 			<input class="box" type="checkbox" id="box">
 			<label for="box"> By clicking on the button, you consent to the processing of your personal data</label>
 		</div>
-		<button class="button2" type="submit">SUBMIT</button>		
+		<button class="button" type="submit">SUBMIT</button>		
 	</div>
 </div>
 

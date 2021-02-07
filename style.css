@@ -1,90 +1,10 @@
-.form {
-    width: 600px;
-    height: 412px;
-    background: #E5EAF8;
-    padding: 65px 40px;
-    margin-top: 113px;
-  }
-  
-  .name {
-    width: 100%;
-    height: 73px;
-    margin-bottom: 20px;
-  }
-  
-  .message {
-    width: 100%;
-    height: 173px;
-  }
+.box {
+  outline: 1px solid;
+  font-size: 0;
+}
 
-  .wrapper {
-    display: flex;
-    width: 100%;
-    height: 73px;
-    margin-bottom: 20px;
-  }
-
-  input {
-    width: 100%;
-	height: 50px;
-	border-width: 1px;
-    border-style: solid;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
-  }
-
-  textarea {
-    width: 100%;
-	height: 150px;
-	resize: none;
-	border-width: 1px;
-    border-style: solid;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
-  }
-
-  .name {
-    width: 100%;
-  }
-
-  .phone {
-      margin-right: 20px;
-  }
-
-  .phone, .email {
-      width: 50%;
-  }
-
-  .box {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-  }
-
-  .checkbox {
-    display: flex;
-    align-items: center;
-  }
-
-  button {
-	height: 40px;
-	width: 106px;
-	background: #000000;
-	color: #FFFFFF;
-	border: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-
-  .modal {
-    width: 1400px;
-    height: 768px;
-    background: #E5EAF8;
-    display: flex;
-    justify-content: center;
-    background: rgba(125, 151, 218, 0.8);
-    }
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
