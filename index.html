@@ -15,21 +15,21 @@
 <body>
 
 <!-- Header -->
-<header class="header">
-	<nav class="header-nav">
-		<img class="header-logo" src="./images/logo.svg" alt="main logo">
-		<a class="header-nav-link" href="#">BLOG</a>
-		<a class="header-nav-link" href="#">CATALOG</a>
-		<a class="header-nav-link" href="#">ABOUT US</a>
-	</nav>
-	<div class="header-find-contact">
-		<a href="#"><img src="./images/find.svg" alt="find"></a>
-		<a class="header-nav-link" href="#">CONTACT US</a>
-	</div>
+<header class="header container">
+		<nav class="header-nav">
+			<img class="header-logo" src="./images/logo.svg" alt="main logo">
+			<ul class="header-nav-list">
+				<li><a class="header-nav-link" href="#">blog</a></li>
+				<li><a class="header-nav-link" href="#">catalog</a></li>
+				<li><a class="header-nav-link" href="#">about us</a></li>
+			</ul>
+		</nav>
+		<a href="#" class="search-ico"></a>
+		<a class="header-nav-link bold" href="#">contact us</a>
 </header>
 
 <!--Main-->
-<main>
+<main class="container">
 	<section class="banner">
 		<div class="banner-slider">
 			01
@@ -103,8 +103,9 @@
 			<div class="contacts-item">
 				<h2>CONTACTS</h2>
 				<p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4459.916896886058!2d-122.42131472635465!3d37.775097630703044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1612683105545!5m2!1sru!2sru" width="483" height="196" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
-			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4459.916896886058!2d-122.42131472635465!3d37.775097630703044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1612683105545!5m2!1sru!2sru" width="483" height="196" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+			
 	</section>
 </main>
 
@@ -137,11 +138,13 @@
 			<ul>
 				<li class="footer-block-header">Connect</li>
 				<li><input class="footer-input" type="email" placeholder="Email"><button class="footer-button">join</button></li>
-				<li class="footer-social">
-					<a href="#"><img class="footer-img" src="/images/facebook.svg" title="facebook"></a>
-					<a href="#"><img class="footer-img" src="/images/twitter.svg" title="twitter"></a>
-					<a href="#"><img class="footer-img" src="/images/pinterest.svg" title="pinterest"></a>
-					<a href="#"><img class="footer-img" src="/images/instagram.svg" title="instagram"></a>
+				<li>
+					<ul class="footer-social-list">
+						<li><a class="footer-social footer-social-facebook" href="#"></a></li>
+						<li><a class="footer-social footer-social-twitter" href="#"></a></li>
+						<li><a class="footer-social footer-social-pinterest" href="#"></a></li>
+						<li><a class="footer-social footer-social-instagram" href="#"></a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -189,7 +192,8 @@
 			<input class="box" type="checkbox" id="box">
 			<label for="box"> By clicking on the button, you consent to the processing of your personal data</label>
 		</div>
-		<button class="button" type="submit">SUBMIT</button>		
+		<button class="button" type="submit">SUBMIT</button>	
+		<a class="close_window"></a>	
 	</div>
 </div>
 
