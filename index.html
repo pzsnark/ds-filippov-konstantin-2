@@ -13,18 +13,19 @@
 </head>
   
 <body>
-
-<!-- Header -->
+	<input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+	<label for="happy">Happy</label>
+	<!-- Header -->
 <header class="header container">
 		<nav class="header-nav">
-			<img class="header-logo" src="./images/logo.svg" alt="main logo">
+			<a class="header-nav-link" href="#"><img class="header-logo" src="./images/logo.svg" alt="main logo"></a>
 			<ul class="header-nav-list">
 				<li><a class="header-nav-link" href="#">blog</a></li>
 				<li><a class="header-nav-link" href="#">catalog</a></li>
 				<li><a class="header-nav-link" href="#">about us</a></li>
 			</ul>
 		</nav>
-		<a href="#" class="search-ico"></a>
+		<a class="search-ico header-nav-link"href="#" ></a>
 		<a class="header-nav-link bold" href="#">contact us</a>
 </header>
 
@@ -33,10 +34,12 @@
 	<section class="banner">
 		<div class="banner-slider">
 			01
-			<div class="rectangle-active"></div>
-			<div class="rectangle"></div>
-			<div class="rectangle"></div>
-			<div class="rectangle"></div>
+			<ul class="banner-rectangle-list">
+				<li><a class="banner-rectangle banner-rectangle-active" href="#"></a></li>
+				<li><a class="banner-rectangle" href="#"></a></li>
+				<li><a class="banner-rectangle" href="#"></a></li>
+				<li><a class="banner-rectangle" href="#"></a></li>
+			</ul>
 		</div>
 		<div class="banner-title">
 			<h1>THE OOH NOO COLLECTION</h1>
@@ -52,12 +55,12 @@
     <!--Category-->
 	<section class="category">
 		<h2>CATEGORY PRODUCTS</h2>
-        <div class="category-list">
-            <div><a href="#"><img src="./images/category1.png" alt=""></a></div>
-            <div><a href="#"><img src="./images/category2.png" alt=""></a></div>
-            <div><a href="#"><img src="./images/category3.png" alt=""></a></div>
-            <div><a href="#"><img src="./images/category4.png" alt=""></a></div>
-        </div>
+            <ul class="category-list">
+				<li><a class="category-item category-item-1" href="#">apparel<br> kids</a></li>
+				<li><a class="category-item category-item-2" href="#">holiday<br> shop</a></li>
+				<li><a class="category-item category-item-3" href="#">toys</a></li>
+				<li><a class="category-item category-item-4" href="#">accessories</a></li>
+			</ul>
         <div class="category-arrow">
             <a href="#"><img class="category-arrow-left" src="./images/arrowleft.svg" alt="arrow left"></a>
 			<a href="#"><img class="category-arrow-right" src="./images/arrowright.svg" alt="arrow right"></a>
