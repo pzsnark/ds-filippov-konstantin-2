@@ -10,7 +10,7 @@ img {
 	display: block;
 }
 
-div, section, header, footer {
+* {
 	box-sizing: border-box;
 }
 
@@ -489,7 +489,23 @@ ul {
 	text-decoration: underline;
 }
 
+
 /* Window Modal */
+
+
+.modal-hidden {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
 .modal {
     max-width: 1400px;
@@ -534,7 +550,6 @@ ul {
     border-style: solid;
 	background: #FFFFFF;
 	border: 2px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
   }
 
   textarea {
@@ -545,7 +560,6 @@ ul {
     border-style: solid;
 	background: #FFFFFF;
 	border: 2px solid rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
   }
 
   input:hover, textarea:hover {
