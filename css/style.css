@@ -10,6 +10,10 @@ img {
 	display: block;
 }
 
+div, section, header, footer {
+	box-sizing: border-box;
+}
+
 /* Container
 =================*/
 .container {
@@ -343,7 +347,6 @@ ul {
 
 .footer {
 	color: #ffffff;
-	box-sizing: border-box;
 	background-color: #434343;
 	padding: 100px 110px;
 	max-width: 1400px;
@@ -499,10 +502,10 @@ ul {
 	}
 
 .form {
-    width: 600px;
-    height: 412px;
+    width: 680px;
+    height: 542px;
     background: #E5EAF8;
-    padding: 65px 40px;
+    padding: 42px 40px;
     margin-top: 113px;
 	position: relative;
   }
@@ -547,6 +550,11 @@ ul {
 
   input:hover, textarea:hover {
 	border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  input:focus, textarea:focus {
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	outline: 0;
   }
 
   .name {
