@@ -14,6 +14,10 @@ img {
 	box-sizing: border-box;
 }
 
+ul {
+	padding: 0;
+}
+
 /* Container
 =================*/
 .container {
@@ -258,10 +262,6 @@ li {
 	position: relative;
 }
 
-ul {
-	padding: 0;
-}
-
 .delivery-menu {
 	position: absolute;
 	width: 540px;
@@ -342,6 +342,7 @@ ul {
 .contact-button {
 	margin-top: 20px;
 }
+
 
 /* Footer */
 
@@ -493,28 +494,28 @@ ul {
 /* Window Modal */
 
 
-.modal-hidden {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+/* .modal-hidden {
+	display: none;
+	position: fixed;
+	z-index: 1;
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+} */
 
 .modal {
-    max-width: 1400px;
-    height: 768px;
-    background: #E5EAF8;
-    display: flex;
+    display: none;
     justify-content: center;
+	width: 100%;
+    height: 100%;
     background: rgba(125, 151, 218, 0.8);
 	margin: 0 auto;
+	position: fixed;
+	top: 0;
 	}
 
 .form {
