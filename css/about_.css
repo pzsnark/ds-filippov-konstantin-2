@@ -1,0 +1,23 @@
+.form {
+    margin-top: 0;
+}
+
+.about-wrapper {
+    width: 1180px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.about-text {
+    width: 500px;
+    padding-left: 120px;
+}
+
+.about-text-span {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C29974;
+    ;
+}

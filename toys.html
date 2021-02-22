@@ -9,8 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/toys.css">
-	<!-- <script src="/js/modal.js"></script> -->
+	<link rel="stylesheet" href="./css/custom-checkbox2.css">
   <title> DLK Project </title>
 </head>
   
@@ -22,39 +24,111 @@
 			<ul class="header-nav-list">
 				<li><a class="header-nav-link" href="blog.html">blog</a></li>
 				<li><a class="header-nav-link" href="catalog.html">catalog</a></li>
-				<li><a class="header-nav-link" href="toys.html">about us</a></li>
+				<li><a class="header-nav-link" href="about.html">about us</a></li>
 			</ul>
 		</nav>
-		<a class="search-ico header-nav-link"href="#" ></a>
+		<a class="search-ico header-nav-link" href="#" ></a>
 		<a class="header-nav-link bold" href="#">contact us</a>
 </header>
 
 <!--Main-->
 <main class="container">
-	<h1 class="toy-header">Toy for kids</h1>
+	<h1 class="header-h1">Toy for kids</h1>
 	<div class="breadcrumbs"><a href="/index.html">Home</a> 
-		<svg class="vector" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg class="breadcrumbs-vector" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
 		</svg> 
 		<a href="/catalog.html">Catalog</a>
-		<svg class="vector" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg class="breadcrumbs-vector" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
 		</svg>
 		<span class="breadcrumbs-active">Toys</span></div>
 	<section class="options">
-		<div class="options-cost"></div>
-		<div class="options-color"></div>
-		<div class="options-delivery"></div>
-		<div class="options-amount"></div>
-		<button class="button">Apply</button>
+	<h2 hidden>Options</h2>
+		<div class="options-cost">
+			<span class="options-header">Cost</span>
+			<input type="range">
+			<div class="option-cost-wrapper">
+				<div>0</div>
+				<div>500</div>
+			</div>
+		</div>
+		<div>
+			<span class="options-header">Color</span>
+			<label class="b-contain">
+				<span>Black</span>
+				<input type="checkbox">
+				<div class="b-input"></div>
+			</label>
+			<label class="b-contain">
+				<span>Blue</span>
+				<input type="checkbox">
+				<div class="b-input"></div>
+			</label>
+			<label class="b-contain">
+				<span>Green</span>
+				<input type="checkbox">
+				<div class="b-input"></div>
+			</label>
+			<label class="b-contain">
+				<span>White</span>
+				<input type="checkbox">
+				<div class="b-input"></div>
+			</label>
+		</div>
+		<div>
+			<span class="options-header">Delivery</span>
+			<label class="b-contain">
+				<span>Free shippig</span>
+				<input type="radio" name="radio1">
+				<div class="b-input"></div>
+			</label>
+			<label class="b-contain">
+				<span>Fast shipping</span>
+				<input type="radio" name="radio1">
+				<div class="b-input"></div>
+			</label>
+		</div>
+		<div>
+			<span class="options-header">Amount</span>
+			<div class="options-amount-wrapper">
+				<div class="options-amount-item options-amount-active">0-5</div>
+				<div class="options-amount-item">10-20</div>
+				<div class="options-amount-item">20-50</div>
+			</div>
+		</div>
+		<div>
+			<span class="options-header">&nbsp;</span>
+			<button class="button">Apply</button>
+		</div>
 	</section>
 	<section class="toys">
-		<div class="toys-item"><a href=""><img src="/images/toy1.png"></a><div class="toys-item-link" id="toys-item-link">learn more</div></div>
-		<div class="toys-item"><img	src="/images/toy2.png"></div>
-		<div class="toys-item"><img	src="/images/toy3.png"></div>
-		<div class="toys-item"><img	src="/images/toy4.png"></div>
-		<div class="toys-item"><img	src="/images/toy5.png"></div>
-		<div class="toys-item"><img	src="/images/toy6.png"></div>
+	<h2 hidden>Toys</h2>
+		<div class="toys-item">
+			<img src="/images/toy1.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+		<div class="toys-item">
+			<img src="/images/toy2.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+		<div class="toys-item">
+			<img src="/images/toy3.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+		<div class="toys-item">
+			<img src="/images/toy4.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+		<div class="toys-item">
+			<img src="/images/toy5.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+		<div class="toys-item">
+			<img src="/images/toy6.png" width="380" height="385" alt="toys pic">
+			<a href="#"><div class="toys-item-link">learn more</div></a>
+		</div>
+
 	</section>
 </main>
 
@@ -189,21 +263,6 @@
 	</div>
 </div>
 
-<script>
-var box = document.getElementById("toys-item-link");
-
-// var btn = document.getElementById("exploreBtn");
-
-// var span = document.getElementsByClassName("close_window")[0];
-
-box.onmouseover = function() {
-  box.style.display = "block";
-}
-
-box.onmouseout = function() {
-  box.style.display = "none";
-}
-</script>
-
+<script src="/js/toys.js"></script>
 </body>
 </html>

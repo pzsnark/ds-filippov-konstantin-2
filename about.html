@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta http-equiv="X-UA-Compatible" content = "ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/custom-checkbox2.css">
   <title> DLK Project </title>
 </head>
   
@@ -32,57 +33,50 @@
 
 <!--Main-->
 <main class="container">
-	<h1 class="header-h1">Blog</h1>
+    <h1 class="header-h1">About us</h1>
 	<div class="breadcrumbs"><a href="/index.html">Home</a>
 		<svg class="breadcrumbs-vector" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
 		</svg>
-		<span class="breadcrumbs-active">Blog</span>
+		<span class="breadcrumbs-active">About Us</span>
 	</div>
-	<section class="blog">
-	<h2 hidden>Blog</h2>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-1"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Top 5 fastest growing it service companies in philly</div>
-			<div class="blog-item-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</div>
-		</div>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-2"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Best financial</div>
-			<div class="blog-item-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</div>
-		</div>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-3"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Company logo or brand identity: which one is more important? brand identity</div>
-			<div class="blog-item-text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</div>
-		</div>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-4"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Best financial</div>
-			<div class="blog-item-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</div>
-		</div>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-5"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Company logo or brand identity: which one is more important? brand identity</div>
-			<div class="blog-item-text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</div>
-		</div>
-		<div class="blog-item">
-			<div class="blog-item-pic blog-item-pic-6"></div>
-			<div class="blog-item-date">23rd August 2018</div>
-			<div class="blog-item-header">Top 5 fastest growing it service companies in philly</div>
-			<div class="blog-item-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</div>
-		</div>
-		<div class="blog-pagecount">
-			<a href="#"><img class="blog-pagecount-pic" src="/images/pageleft.svg" alt="page left"></a>
-			<span class="blog-pagecount-count"><a class="blog-pagecount-count-active" href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a></span>
-			<a href="#"><img class="blog-pagecount-pic" src="/images/pageright.svg" alt="page right"></a>
-		</div>
-	</section>
+	<div class="about-wrapper">
+        <div class="form">
+            <div class="name">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Ivan Ivanov">
+            </div>
+            <div class="wrapper">
+                <div class="phone">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </div>
+            <label class="b-contain checkbox">
+                <span>By clicking on the button, you consent to the processing of your personal data</span>
+                <input type="checkbox">
+                <div class="b-input"></div>
+            </label>
+            <button class="button" type="submit">SUBMIT</button>	
+            <a class="close_window">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+                </svg></a>	
+        </div>
+        <div class="about-text">
+            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p class="about-text-span">An expert is waiting to help you!</p>
+        </div>
+    </div>
 </main>
 
 <!--Footer-->
@@ -181,37 +175,5 @@
 	</div>		
 </footer>
 
-<!-- Modal -->
-<div class="modal">	
-	<div class="form">
-		<div class="name">
-			<label for="name">Name</label>
-			<input id="name" type="text">
-		</div>
-		<div class="wrapper">
-			<div class="phone">
-				<label for="phone">Phone</label>
-				<input id="phone" type="tel">
-			</div>
-			<div class="email">
-				<label for="email">Email</label>
-				<input id="email" type="email">
-			</div>
-		</div>
-		<div class="message">
-			<label for="message">Message</label>
-			<textarea id="message"></textarea>
-		</div>
-		<div class="checkbox">
-			<input class="modal-checkbox" type="checkbox" id="box">
-			<label for="box"> By clicking on the button, you consent to the processing of your personal data</label>
-		</div>
-		<button class="button" type="submit">SUBMIT</button>	
-		<a class="close_window"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
-			</svg></a>	
-	</div>
-</div>
-
-	</body>
+</body>
 </html>
